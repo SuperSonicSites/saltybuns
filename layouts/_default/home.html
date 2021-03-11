@@ -1,0 +1,248 @@
+{{ define "main" }}
+<header class="hero is-medium">
+
+  <div class="hero-body">
+
+    <div class="container py-5 my-5">
+  
+          <div class="is-flex is-column is-justified-center is-aligned-center py-5">
+            <div class="hero__mobile--logo">
+              <img src="{{ $.Site.Params.imagekit_base_url }}tr:w-auto,ar-1-1/logo_saltybuns_WeQ1LzE7z.png" size="100vw" width="200px" alt="{{ .Site.Params.name }}">
+            </div>
+            <div class="my-5">
+            <h1 class="title has-text-centered">Where Great Food Meets Great People</h1>
+            <p class="subtitle has-text-centered my-2">
+              {{ .Params.hero1 | safeHTML }} {{ .Params.hero2 | safeHTML }}
+            </p>
+          </div>
+          <div class="hero__cta--mobile">
+            <a href="#" class="button is-primary is-large">Call Now To Order</a>
+          </div>
+          <div class="hero__cta--desktop">
+            <a href="#" class="button is-primary is-large">Explore Our Menu</a>
+          </div>
+          </div>
+   
+
+
+    </div>
+
+</header>
+
+<section id="section1" class="display-none section mt-5 has-background-white has-text-dark has-text-weight-bold">
+  <div class="container">
+    <div class="is-flex is-column is-justified-center is-aligned-center">
+      <h2 class="is-size-2 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.heading1 }}</h2>
+
+      <h3 class="is-size-3 has-text-weight-bold mt-1 has-text-centered-touch">Residential & Commercial</h3>
+    </div>
+  </div>
+</section>
+
+<section id="section2" class="display-none">
+  <div class="container">
+
+    <div class="columns">
+      <div class="column">
+        <div class="box__feature is-flex is-column is-justified-center is-aligned-center" data-aos="fade-up"
+          data-aos-duration="800">
+          <svg class="feature_icon">
+            <use xlink:href="{{ $.Site.BaseURL }}icons/light.svg#fire"></use>
+          </svg>
+          <h3 class="is-size-4 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.benefit1 }}</h3>
+          <p class="has-text-centered has-font-size-small">{{ .Params.benefit1_desc }}</p>
+        </div>
+
+      </div>
+
+      <div class="column">
+        <div class="box__feature is-flex is-column is-justified-center is-aligned-center" data-aos="fade-up"
+          data-aos-duration="800">
+          <svg class="feature_icon">
+            <use xlink:href="{{ $.Site.BaseURL }}icons/light.svg#tint"></use>
+          </svg>
+          <h3 class="is-size-4 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.benefit2 }}</h3>
+          <p class="has-text-centered has-font-size-small">{{ .Params.benefit2_desc }}</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="box__feature is-flex is-column is-justified-center is-aligned-center" data-aos="fade-up"
+          data-aos-duration="800">
+          <svg class="feature_icon">
+            <use xlink:href="{{ $.Site.BaseURL }}icons/light.svg#volume-mute"></use>
+          </svg>
+          <h3 class="is-size-4 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.benefit3 }}</h3>
+          <p class="has-text-centered has-font-size-small">{{ .Params.benefit3_desc }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="section3" class="section is-small mb-5">
+
+  <div class="container">
+    <h2 class="is-size-2 has-text-uppercase has-text-centered mb-5 pb-5 has-text-weight-bold">{{ .Params.heading2 }}
+    </h2>
+    <div class="columns">
+      <div class="column is-7">
+        <p class="has-text-centered-touch">{{ .Params.heading2_sub | safeHTML }}</p>
+      </div>
+      <div class="column is-5">
+        <img src="https://via.placeholder.com/500x550" class="lazyload has-shadow" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="section5" class="display-none section is-medium ">
+    <div class="container">
+    <h2 class="is-size-2 has-text-uppercase has-text-centered mb-5 pb-5 has-text-weight-bold">Why Spray Foam Insulation
+    </h2>
+    <div class="video lazyload">
+    <iframe width="100%" height="680px" src="https://www.youtube.com/embed/FE44fzcOOag" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    </div>
+  </div>
+  </section>
+
+<section id="section6" class="section is-medium has-text-white testimonials has-background-primary">
+  <div class="container">
+    <h2 class="has-text-centered is-size-2 has-text-uppercase has-text-white has-text-weight-bold">Testimonials</h2>
+
+    <div class="columns is-5 mt-5">
+      <div class="column">
+        <div class="testimonial testimonial_1">
+          <h2 class="testimonial__name is-size-4 has-text-weight-bold">{{ .Params.testimonial1__name }}</h2>
+            {{- partial "stars.html" .}}
+          <p class="block testimonial__text">{{ .Params.testimonial1 }}</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="testimonial testimonial_2">
+          <h2 class="testimonial__name is-size-4 has-text-weight-bold">{{ .Params.testimonial2__name }}</h2>
+          {{- partial "stars.html" .}}
+        <p class="block testimonial__text">{{ .Params.testimonial2 }}</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="testimonial testimonial_3">
+          <h2 class="testimonial__name is-size-4 has-text-weight-bold">{{ .Params.testimonial3__name }}</h2>
+          {{- partial "stars.html" .}}
+        <p class="block testimonial__text">{{ .Params.testimonial3 }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="section7" class="section section is-medium">
+<div class="container">
+  <h2 class="is-size-2 has-text-centered mb-5 pb-5 has-text-weight-bold">Our Menu</h2>
+
+  <h3 class="is-size-3">Bites</h3>
+  <div class="divider"></div>
+  {{ range $.Site.Data.bites }}
+  {{ partial "menu.html" . }}
+  {{ end }}
+
+  <h3 class="is-size-3 mt-5">Bacos</h3>
+  <div class="divider"></div>
+  {{ range $.Site.Data.bacos }}
+  {{ partial "menu.html" . }}
+  {{ end }}
+  
+  <h3 class="is-size-3  mt-5">Burritos</h3>
+  <div class="divider"></div>
+  {{ range $.Site.Data.burritos }}
+  {{ partial "menu.html" . }}
+  {{ end }}
+
+  <h3 class="is-size-3  mt-5">Bowls</h3>
+  <div class="divider"></div>
+  {{ range $.Site.Data.bowls }}
+  {{ partial "menu.html" . }}
+  {{ end }}
+
+</div>
+</section>
+
+<section id="section4">
+  <div class="gallery" id="photo">
+    <figure class="gallery__item gallery__item--1">
+      <img src="https://via.placeholder.com/300" class="gallery__img lazyload" alt="Image 1">
+    </figure>
+    <figure class="gallery__item gallery__item--2">
+      <img src="https://via.placeholder.com/300" class="gallery__img lazyload" alt="Image 2">
+    </figure>
+    <figure class="gallery__item gallery__item--3">
+      <img src="https://via.placeholder.com/300" class="gallery__img lazyload" alt="Image 3">
+    </figure>
+    <figure class="gallery__item gallery__item--4">
+      <img src="https://via.placeholder.com/300" class="gallery__img lazyload" alt="Image 4">
+    </figure>
+    <figure class="gallery__item gallery__item--5">
+      <img src="https://via.placeholder.com/300" class="gallery__img lazyload" alt="Image 5">
+    </figure>
+    <figure class="gallery__item gallery__item--6">
+      <img src="https://via.placeholder.com/300" class="gallery__img lazyload" alt="Image 6">
+    </figure>
+  </div>
+</section>
+<section id="contact" class="section is-medium">
+  <div class="container">
+    <h2
+      class="is-size-2 has-text-weight-bold has-text-uppercase has-text-centered">
+      {{ .Params.contact_heading }}
+    </h2>
+    <h3 class="has-text-centered py-2 is-size-4">
+      {{ .Params.contact_desc | safeHTML }}
+    </h3>
+  </div>
+  <div class="column is-half is-offset-one-quarter shadow box_form mt-5">
+    <form id="contact-form" method="POST" action="{{ .Site.Params.usebasin }}"
+      class="has-shadow form has-background-light p-5" role="form">
+      <div class="field">
+        <label for="form_name" class="label">{{ i18n "firstname" }} *</label>
+
+        <div class="control">
+          <input id="form_name" class="input" placeholder="e.g Alex Smith" type="text" name="name" class="form-control"
+            required="required" data-error="Firstname is required." />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="email">{{ i18n "email" }} *</label>
+
+        <div class="control">
+          <input id="email" name="email" class="input" type="email" placeholder="e.g. alexsmith@gmail.com" required="required"
+            data-error="Valid email is required." />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="phone">{{ i18n "phone" }}</label>
+
+        <div class="control">
+          <input id="phone" name="phone" class="input" type="tel" placeholder="e.g. +1-234-567-7890" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="form_message"><strong>Message *</strong></label>
+
+        <textarea id="form_message" name="message" class="textarea" rows="4" required
+          data-error="Please,leave us a message."></textarea>
+      </div>
+      <div class="is-flex is-justified-center">
+        <input type="submit" class="button is-primary is-large my-5 has-text-centered" value="Get Your Quote Today">
+      </div>
+    </form>
+  </div>
+</section>
+
+{{ end }}

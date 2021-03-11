@@ -1,0 +1,75 @@
+baseURL: "/"
+DefaultContentLanguage: en
+title: Brightest Days Spray Foam Co.
+description: Spray Foam Insulation Services in Tofino, Ucluelet & Port Alberni. Because Energy Efficient Homes Are More Valuable. Get a FREE Consultation Today.
+
+menu:
+      main:
+        - name: Home
+          url: '/'
+          weight: 1
+        - name: About
+          url: '#about'
+          weight: 2
+        - name: Menu
+          url: '#menu'
+          weight: 3
+        - name: Photos
+          url: '#Photos'
+          weight: 4
+        - name: Reviews
+          url: '#Photos'
+          weight: 5
+        - name: Contact
+          url: '#contact'
+          weight: 6
+
+params:
+    name: 'Brightest Days Spray Foam Co.'
+    showLanguageSelector: false #true if bilingual site - false if unilingua
+    usebasin: 'https://usebasin.com/f/7bbcae118128' #endpoint for forms
+    googlemap: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2620.7901177865374!2d-125.54422898432286!3d48.93843927929546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548973bb74a97497%3A0xa1a90fb7c32ca3a3!2s1356%20Pine%20Rd%2C%20Ucluelet%2C%20BC%20V0R%203A0!5e0!3m2!1sen!2sca!4v1611952308750!5m2!1sen!2sca' # Map code of Google
+    gtm: 'GTM-ML2XLHP'
+    imagekit_base_url: "https://ik.imagekit.io/supersonicsites/Westcoast_Salty_Buns/"
+    hours:
+        hour1en: 'Mon to Fri - 9:00-17:00' #Footer Hours Line #1
+        hour2en: 'Sat - On Demand' #Footer Hours Line #2
+        hour3en: 'Sun - On Demand' #Footer Hours Line #3
+    social:
+        facebook: ''
+        twitter: ''
+        pinterest: ''
+        instagram: ''
+        linkedin: ''
+    schema:
+        type: ProfessionalService
+        priceRange: $$$
+        reservation: 'false'
+        openinghour: 'Mo-Fr 9:00-17:00'
+        logo: "img/logo.png"
+        logofooter: "img/logo.png"
+        logo: "logo_saltybuns_WeQ1LzE7z.png"
+        og: "img/og.jpg"
+        address: 1356 Pine Rd.
+        address2: ''
+        city: Ucluelet
+        region: BC
+        country: Canada
+        postalcode: V0R 3A0
+        phone: +1-250-720-7610 
+        email: info@brightestdays.ca
+
+enableRobotsTXT: true
+disableAliases: true
+disableKinds:
+  - taxonomy
+  - taxonomyTerm
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+
+imaging:
+  resampleFilter: box
+  quality: 85
+  anchor: smart
