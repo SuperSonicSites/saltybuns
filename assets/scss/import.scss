@@ -1,6 +1,14 @@
 $primary: #f55830;
 $secondary: #47b2b0;
 
+h1,
+h2,
+h3,
+h4,
+.is-size-1, .is-size-2, .is-size-3, .is-size-4 {
+  font-family: "Gravitas One", sans-serif !important;
+}
+
 @import "bulma/utilities/_all";
 @import "bulma/base/_all";
 @import "bulma/elements/_all";
@@ -14,3 +22,11 @@ $secondary: #47b2b0;
 @import 'utility';
 @import 'privacypolicy';
 @import 'nav';
+
+h1,
+h2,
+h3,
+h4,
+.is-size-1, .is-size-2, .is-size-3, .is-size-4 {
+  font-family: "Gravitas One", sans-serif !important;
+}
