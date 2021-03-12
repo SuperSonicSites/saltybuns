@@ -11,28 +11,31 @@
 }
 /* gravitas-one-regular - latin */
 @font-face {
-  font-family: 'Gravitas One';
+  font-family: "Gravitas One";
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('/fonts/gravitas-one-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/gravitas-one-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""),
+    url("/fonts/gravitas-one-v10-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/fonts/gravitas-one-v10-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* Base Settings */
 .container {
   max-width: 1140px !important;
 }
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Gravitas One", sans-serif !important;
-}
-p,
-a,
-li {
-  font-family: "Open Sans", sans-serif;
+body {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Gravitas One", sans-serif;
+  }
+  p,
+  a,
+  li {
+    font-family: "Open Sans", sans-serif;
+  }
 }
 ul {
   list-style: circle;
@@ -42,7 +45,8 @@ ul {
 .has-font-size-small {
   font-size: 0.95rem;
 }
-.is-size-2, .is-size-3{
+.is-size-2,
+.is-size-3 {
   color: black;
 }
 .is-size-4 {
@@ -55,15 +59,12 @@ ul {
   .is-size-2 {
     font-size: 1.6rem !important;
     letter-spacing: 1px;
-
   }
   .is-size-3 {
     font-size: 1.45rem !important;
-
   }
   .is-size-4 {
     font-size: 1.25rem !important;
-
   }
 }
 /*------------*/
@@ -89,22 +90,22 @@ ul {
 }
 
 .hero__cta--mobile {
-  display:none;
+  display: none;
 }
 
 @media only screen and (max-width: 968px) {
-.hero__cta--mobile {
-  display: block;
-}
-.hero__cta--desktop {
-  display:none;
-}
-.title {
-  font-size: 3rem !important;
-}
-.subtitle {
-  font-size: 1.6rem;
-}
+  .hero__cta--mobile {
+    display: block;
+  }
+  .hero__cta--desktop {
+    display: none;
+  }
+  .title {
+    font-size: 3rem !important;
+  }
+  .subtitle {
+    font-size: 1.6rem;
+  }
 }
 @media only screen and (max-width: 375px) {
   .title {
@@ -138,34 +139,34 @@ ul {
   right: 0;
   font-size: 1.05rem;
   font-weight: 700;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 
   .price_prefix {
-      font-weight: 400;
-      font-size: 0.75rem;
+    font-weight: 400;
+    font-size: 0.75rem;
   }
 }
 
 .menu__item--price2 {
   font-size: 1.05rem !important;
   font-weight: 700 !important;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 
   .price_prefix {
-      font-weight: 400;
-      font-size: 0.75rem;
+    font-weight: 400;
+    font-size: 0.75rem;
   }
 }
-@media(max-width: 468px) {
+@media (max-width: 468px) {
   .menu__item--title {
-      font-size: 1.15rem;
+    font-size: 1.15rem;
   }
   .menu__item--price {
-      font-size: 1rem;
-      font-weight: 400;
+    font-size: 1rem;
+    font-weight: 400;
   }
   .menu__item--desc {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 }
 /*----------*/
@@ -223,7 +224,6 @@ ul {
 }
 
 /* .privacypolicy { */
-
 
 /* GALLERY */
 
