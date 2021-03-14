@@ -1,19 +1,24 @@
 {{ define "main" }}
-<header class="hero is-medium">
+<header class="hero is-fullheight">
 
   <div class="hero-body">
 
     <div class="container py-5 my-5">
   
           <div class="is-flex is-column is-justified-center is-aligned-center py-5">
+            
             <div class="hero__mobile--logo">
-              <img src="{{ $.Site.Params.imagekit_base_url }}tr:w-auto,ar-1-1/logo_saltybuns_WeQ1LzE7z.png" size="100vw" width="200px" alt="{{ .Site.Params.name }}">
+              <img src="{{ $.Site.Params.imagekit_base_url }}tr:w-auto/logo-vertical_Q9u2mUs5X.jpg" width="100%;" size="100vw" width="200px" alt="{{ .Site.Params.name }}">
             </div>
+
             <div class="my-5">
-            <h1 class="title has-text-centered">Where Great Food Meets Great People</h1>
-            <p class="subtitle has-text-centered my-2">
+            <h1 class="title has-text-centered has-text-uppercase">Awesome West Coast Mexican BBQ</h1>
+            <p class="subtitle has-text-centered my-2 has-text-capitalized">
               {{ .Params.hero1 | safeHTML }} {{ .Params.hero2 | safeHTML }}
             </p>
+          </div>
+          <div class="">
+            <img src="{{ $.Site.Params.imagekit_base_url }}tr:w-1000/{{ .Params.hero_img }}" size="100vw" width="800px;" alt="{{ .Site.Params.name }}">
           </div>
           <div class="hero__cta--mobile">
             <a href="#" class="button is-primary is-large">Call Now To Order</a>
@@ -88,12 +93,37 @@
         </div>
       </div>
     </div>
+
+    <div class="columns is-5">
+      <div class="column">
+        <div class="testimonial testimonial_1">
+          <h2 class="testimonial__name is-size-4 has-text-weight-bold">{{ .Params.testimonial1__name }}</h2>
+            {{- partial "stars.html" .}}
+          <p class="block testimonial__text">{{ .Params.testimonial1 }}</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="testimonial testimonial_2">
+          <h2 class="testimonial__name is-size-4 has-text-weight-bold">{{ .Params.testimonial2__name }}</h2>
+          {{- partial "stars.html" .}}
+        <p class="block testimonial__text">{{ .Params.testimonial2 }}</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="testimonial testimonial_3">
+          <h2 class="testimonial__name is-size-4 has-text-weight-bold">{{ .Params.testimonial3__name }}</h2>
+          {{- partial "stars.html" .}}
+        <p class="block testimonial__text">{{ .Params.testimonial3 }}</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <section id="section7" class="section section is-medium">
 <div class="container">
-  <h2 class="is-size-2 has-text-centered mb-5 pb-5 has-text-weight-bold">Our Menu</h2>
+  <h2 class="is-size-2 has-text-centered mb-5 pb-5 has-text-weight-bold has-text-uppercase">Menu</h2>
 
   <h3 class="is-size-3">Bites</h3>
   <div class="divider"></div>

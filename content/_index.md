@@ -3,7 +3,9 @@ title: Lorem Ipsum
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor, risus in varius eleifend, lectus quam vehicula lorem, at pharetra metus lorem vel felis.  
 
 hero1: 
-hero2: West Coast driven food truck with Mexican & BBQ influence - serving up burritos, bowls & bacos in Ukee.
+hero2: "Ukee's Coolest Winnebago Food Truck. Serving up fresh top quality bites, burritos, bacos & bowls. #Awesome" 
+hero_img: WildWanda-01_I2P3-iVOf.jpg
+
 
 heading1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 

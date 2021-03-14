@@ -29,14 +29,16 @@
   }
   .navbar-item, .navbar-link {
     color: $primary !important;
+    border-bottom: 3px solid white;
+    background-color: white;
   }
   .navbar-item:hover, .navbar-link:hover {
-    background-color: $primary !important;
-    color: white !important;
+    color: $primary;
+    border-bottom: 3px solid $primary;
   }
 a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
- color: white;
- background-color: $primary;
+ color: $primary;
+ border-bottom: 3px solid $primary;
   }
 /* MOBILE MENU STYLES */
 .mobile {
