@@ -4,7 +4,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed portti
 
 hero1: 
 hero2: "Ukee's Coolest Winnebago Food Truck. Serving up fresh top quality bites, burritos, bacos & bowls. #Awesome" 
-hero_img: WildWanda-01_I2P3-iVOf.jpg
+hero_img: /WildWanda-01_I2P3-iVOf.jpg
 
 
 heading1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 

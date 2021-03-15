@@ -16,14 +16,15 @@
           <div class="">
 
             <img
-            src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50/{{ .Params.hero_img }}"
+            src="{{ $.Site.Params.imagekit_base_url }}tr:w-500,/{{ .Params.hero_img }}"
             sizes="100vw"
             data-srcset="
-            {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250/{{ .Params.hero_img }} 400w,
-            {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/{{ .Params.hero_img }} 768w,
-            {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-450/{{ .Params.hero_img }} 1024w"
-            data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/{{ .Params.hero_img }} 768w"
-            class="lazyload gallery__img"
+            {{ $.Site.Params.imagekit_base_url }}tr:w-350,/{{ .Params.hero_img }} 400w,
+            {{ $.Site.Params.imagekit_base_url }}tr:w-500,/{{ .Params.hero_img }} 768w,
+            {{ $.Site.Params.imagekit_base_url }}tr:w-800,/{{ .Params.hero_img }} 800w"
+            data-src="{{ $.Site.Params.imagekit_base_url }}tr:w-350,/{{ .Params.hero_img }} 768w"
+            class="lazyload"
+            width="800px";
             alt="{{ .Site.Params.name }}"
             />
           </div>
@@ -58,8 +59,20 @@
     </h2>
     <div class="columns">
       <div class="column is-5">
-        <img src="{{ $.Site.Params.imagekit_base_url }}tr:ar-3-4,w-600/WestCoastSaltyBuns__food--3_aKeKXqxg18.jpg" sizes="100%" class="lazyload has-shadow" alt="Wild Wanda Winnebago">
-      </div>
+
+        <img
+        src="{{ $.Site.Params.imagekit_base_url }}tr:ar-3-4,w-500,bl-30,q-50,/{{ .Params.hero_img }}"
+        sizes="100vw"
+        data-srcset="
+        {{ $.Site.Params.imagekit_base_url }}tr:ar-3-4,w-350,/WestCoastSaltyBuns__food--3_aKeKXqxg18.jpg 400w,
+        {{ $.Site.Params.imagekit_base_url }}tr:ar-3-4,w-500,/WestCoastSaltyBuns__food--3_aKeKXqxg18.jpg 768w,
+        {{ $.Site.Params.imagekit_base_url }}tr:ar-3-4,w-800,/WestCoastSaltyBuns__food--3_aKeKXqxg18.jpg 800w"
+        data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-3-4,w-350,/WestCoastSaltyBuns__food--3_aKeKXqxg18.jpg 768w"
+        class="lazyload has-shadow"
+        width="100%";
+        alt="{{ .Site.Params.name }}"
+        />
+        </div>
       <div class="column is-7">
         <p class="has-text-centered-touch">{{ .Params.heading2_sub | safeHTML }}</p>
       </div>
@@ -165,13 +178,13 @@
     <figure class="gallery__item gallery__item--1">
 
       <img
-      src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50/C047589F-599B-49EF-84DE-E0F6F20EC587_GZa4-qVGz.JPG"
+      src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50,/C047589F-599B-49EF-84DE-E0F6F20EC587_GZa4-qVGz.JPG"
       sizes="100vw"
       data-srcset="
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250/C047589F-599B-49EF-84DE-E0F6F20EC587_GZa4-qVGz.JPG 400w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/C047589F-599B-49EF-84DE-E0F6F20EC587_GZa4-qVGz.JPG 768w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400/C047589F-599B-49EF-84DE-E0F6F20EC587_GZa4-qVGz.JPG 1024w"
-      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/C047589F-599B-49EF-84DE-E0F6F20EC587_GZa4-qVGz.JPG 768w"
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250,/C047589F-599B-49EF-84DE-E0F6F20EC587_GZa4-qVGz.JPG 400w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/C047589F-599B-49EF-84DE-E0F6F20EC587_GZa4-qVGz.JPG 768w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400,/C047589F-599B-49EF-84DE-E0F6F20EC587_GZa4-qVGz.JPG 1024w"
+      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/C047589F-599B-49EF-84DE-E0F6F20EC587_GZa4-qVGz.JPG 768w"
       class="lazyload gallery__img" />
 
       </figure>
@@ -179,52 +192,52 @@
     <figure class="gallery__item gallery__item--2">
 
       <img
-      src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50/WestCoastSaltyBuns__food--8_0gvC_zSHFV.jpg"
+      src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50,/WestCoastSaltyBuns__food--8_0gvC_zSHFV.jpg"
       sizes="100vw"
       data-srcset="
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250/WestCoastSaltyBuns__food--8_0gvC_zSHFV.jpg 400w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/WestCoastSaltyBuns__food--8_0gvC_zSHFV.jpg 768w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400/WestCoastSaltyBuns__food--8_0gvC_zSHFV.jpg 1024w"
-      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/WestCoastSaltyBuns__food--8_0gvC_zSHFV.jpg 768w"
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250,/WestCoastSaltyBuns__food--8_0gvC_zSHFV.jpg 400w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/WestCoastSaltyBuns__food--8_0gvC_zSHFV.jpg 768w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400,/WestCoastSaltyBuns__food--8_0gvC_zSHFV.jpg 1024w"
+      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/WestCoastSaltyBuns__food--8_0gvC_zSHFV.jpg 768w"
       class="lazyload gallery__img" />
 
     </figure>
     <figure class="gallery__item gallery__item--3">
 
       <img
-      src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50/WestCoastSaltyBuns__food--1_FuX-spLpSK.jpg"
+      src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50,/WestCoastSaltyBuns__food--1_FuX-spLpSK.jpg"
       sizes="100vw"
       data-srcset="
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250/WestCoastSaltyBuns__food--1_FuX-spLpSK.jpg 400w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/WestCoastSaltyBuns__food--1_FuX-spLpSK.jpg 768w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400/WestCoastSaltyBuns__food--1_FuX-spLpSK.jpg 1024w"
-      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/WestCoastSaltyBuns__food--1_FuX-spLpSK.jpg 768w"
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250,/WestCoastSaltyBuns__food--1_FuX-spLpSK.jpg 400w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/WestCoastSaltyBuns__food--1_FuX-spLpSK.jpg 768w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400,/WestCoastSaltyBuns__food--1_FuX-spLpSK.jpg 1024w"
+      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/WestCoastSaltyBuns__food--1_FuX-spLpSK.jpg 768w"
       class="lazyload gallery__img" />
 
     </figure>
     <figure class="gallery__item gallery__item--4">
 
       <img
-      src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50/WestCoastSaltyBuns__food--5_pLkKjSib0R.jpg"
+      src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50,/WestCoastSaltyBuns__food--5_pLkKjSib0R.jpg"
       sizes="100vw"
       data-srcset="
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250/WestCoastSaltyBuns__food--5_pLkKjSib0R.jpg 400w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/WestCoastSaltyBuns__food--5_pLkKjSib0R.jpg 768w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400/WestCoastSaltyBuns__food--5_pLkKjSib0R.jpg 1024w"
-      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/WestCoastSaltyBuns__food--5_pLkKjSib0R.jpg 768w"
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250,/WestCoastSaltyBuns__food--5_pLkKjSib0R.jpg 400w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/WestCoastSaltyBuns__food--5_pLkKjSib0R.jpg 768w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400,/WestCoastSaltyBuns__food--5_pLkKjSib0R.jpg 1024w"
+      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/WestCoastSaltyBuns__food--5_pLkKjSib0R.jpg 768w"
       class="lazyload gallery__img" />
       
     </figure>
     <figure class="gallery__item gallery__item--5">
 
       <img
-      src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50/254C985A-9F7B-4BFB-9752-6EFD9447FDA3_HPQJ36G7l.JPG"
+      src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50,/254C985A-9F7B-4BFB-9752-6EFD9447FDA3_HPQJ36G7l.JPG"
       sizes="100vw"
       data-srcset="
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250/254C985A-9F7B-4BFB-9752-6EFD9447FDA3_HPQJ36G7l.JPG 400w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/254C985A-9F7B-4BFB-9752-6EFD9447FDA3_HPQJ36G7l.JPG 768w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400/254C985A-9F7B-4BFB-9752-6EFD9447FDA3_HPQJ36G7l.JPG 1024w"
-      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/254C985A-9F7B-4BFB-9752-6EFD9447FDA3_HPQJ36G7l.JPG 768w"
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250,/254C985A-9F7B-4BFB-9752-6EFD9447FDA3_HPQJ36G7l.JPG 400w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/254C985A-9F7B-4BFB-9752-6EFD9447FDA3_HPQJ36G7l.JPG 768w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400,/254C985A-9F7B-4BFB-9752-6EFD9447FDA3_HPQJ36G7l.JPG 1024w"
+      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/254C985A-9F7B-4BFB-9752-6EFD9447FDA3_HPQJ36G7l.JPG 768w"
       class="lazyload gallery__img" />
 
       </figure>
@@ -234,36 +247,36 @@
       src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50/WestCoastSaltyBuns__food--6_CYuJWHosh.jpg"
       sizes="100vw"
       data-srcset="
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250/WestCoastSaltyBuns__food--6_CYuJWHosh.jpg 400w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/WestCoastSaltyBuns__food--6_CYuJWHosh.jpg 768w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400/WestCoastSaltyBuns__food--6_CYuJWHosh.jpg 1024w"
-      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/WestCoastSaltyBuns__food--6_CYuJWHosh.jpg 768w"
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250,/WestCoastSaltyBuns__food--6_CYuJWHosh.jpg 400w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/WestCoastSaltyBuns__food--6_CYuJWHosh.jpg 768w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400,/WestCoastSaltyBuns__food--6_CYuJWHosh.jpg 1024w"
+      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/WestCoastSaltyBuns__food--6_CYuJWHosh.jpg 768w"
       class="lazyload gallery__img" />
 
       </figure>
     <figure class="gallery__item gallery__item--7">
 
       <img
-      src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50/WestCoastSaltyBuns__food--7_1zBORLboE.jpg"
+      src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50,/WestCoastSaltyBuns__food--7_1zBORLboE.jpg"
       sizes="100vw"
       data-srcset="
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250/WestCoastSaltyBuns__food--7_1zBORLboE.jpg 400w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/WestCoastSaltyBuns__food--7_1zBORLboE.jpg 768w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400/WestCoastSaltyBuns__food--7_1zBORLboE.jpg 1024w"
-      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/WestCoastSaltyBuns__food--7_1zBORLboE.jpg 768w"
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250,/WestCoastSaltyBuns__food--7_1zBORLboE.jpg 400w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/WestCoastSaltyBuns__food--7_1zBORLboE.jpg 768w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400,/WestCoastSaltyBuns__food--7_1zBORLboE.jpg 1024w"
+      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/WestCoastSaltyBuns__food--7_1zBORLboE.jpg 768w"
       class="lazyload gallery__img" />
 
       </figure>
     <figure class="gallery__item gallery__item--8">
 
       <img
-      src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50/WestCoastSaltyBuns__food--2_KtoTDO36fP.jpg"
+      src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,bl-30,q-50,/WestCoastSaltyBuns__food--2_KtoTDO36fP.jpg"
       sizes="100vw"
       data-srcset="
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250/WestCoastSaltyBuns__food--2_KtoTDO36fP.jpg 400w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/WestCoastSaltyBuns__food--2_KtoTDO36fP.jpg 768w,
-      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400/WestCoastSaltyBuns__food--2_KtoTDO36fP.jpg 1024w"
-      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350/WestCoastSaltyBuns__food--2_KtoTDO36fP.jpg 768w"
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-250,/WestCoastSaltyBuns__food--2_KtoTDO36fP.jpg 400w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/WestCoastSaltyBuns__food--2_KtoTDO36fP.jpg 768w,
+      {{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-400,/WestCoastSaltyBuns__food--2_KtoTDO36fP.jpg 1024w"
+      data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-350,/WestCoastSaltyBuns__food--2_KtoTDO36fP.jpg 768w"
       class="lazyload gallery__img" />
 
 
