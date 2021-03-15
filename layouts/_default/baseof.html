@@ -13,7 +13,9 @@
     {{ $styles := resources.Get "scss/import.scss" | resources.ToCSS (dict "outputStyle" "compressed") | postCSS | minify }}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" />
     {{ end}}
-    
+    <link rel="preload" href="{{ $.Site.BaseURL }}fonts/gravitas-one-v10-latin-regular.woff" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="{{ $.Site.BaseURL }}fonts/open-sans-v18-latin-regular.woff" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="{{ $.Site.BaseURL }}fonts/open-sans-v18-latin-600.woff" as="font" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     {{- partial "gtm-head.html" . }}
 </head>
