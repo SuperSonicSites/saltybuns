@@ -7,10 +7,6 @@
   
           <div class="is-flex is-column is-justified-center is-aligned-center py-5">
             
-            <div class="hero__mobile--logo">
-              <img src="{{ $.Site.Params.imagekit_base_url }}tr:w-auto/logo-vertical_Q9u2mUs5X.jpg" width="100%;" size="100vw" width="200px" alt="{{ .Site.Params.name }}">
-            </div>
-
             <div class="my-5">
             <h1 class="title has-text-centered has-text-uppercase">Awesome West Coast Mexican BBQ</h1>
             <p class="subtitle has-text-centered my-2 has-text-capitalized">
@@ -21,10 +17,10 @@
             <img src="{{ $.Site.Params.imagekit_base_url }}tr:w-1000/{{ .Params.hero_img }}" size="100vw" width="800px;" alt="{{ .Site.Params.name }}">
           </div>
           <div class="hero__cta--mobile">
-            <a href="#" class="button is-primary is-large">Call Now To Order</a>
+            <a href="tel:{{ .Site.Params.schema.phone }}" class="button is-primary is-large">Call Now To Order</a>
           </div>
           <div class="hero__cta--desktop">
-            <a href="#" class="button is-primary is-large">Explore Our Menu</a>
+            <a href="#menu" class="button is-primary is-large">Explore Our Menu</a>
           </div>
           </div>
    
@@ -44,19 +40,17 @@
   </div>
 </section>
 
-
-
 <section id="section3" class="section is-small mb-5">
 
   <div class="container">
     <h2 class="is-size-2 has-text-uppercase has-text-centered mb-5 pb-5 has-text-weight-bold">{{ .Params.heading2 }}
     </h2>
     <div class="columns">
+      <div class="column is-5">
+        <img src="{{ $.Site.Params.imagekit_base_url }}tr:ar-3-4,w-600/WestCoastSaltyBuns__food--3_aKeKXqxg18.jpg" sizes="100%" class="lazyload has-shadow" alt="Wild Wanda Winnebago">
+      </div>
       <div class="column is-7">
         <p class="has-text-centered-touch">{{ .Params.heading2_sub | safeHTML }}</p>
-      </div>
-      <div class="column is-5">
-        <img src="https://via.placeholder.com/500x550" class="lazyload has-shadow" alt="">
       </div>
     </div>
   </div>
@@ -121,7 +115,7 @@
   </div>
 </section>
 
-<section id="section7" class="section section is-medium">
+<section id="menu" class="section section is-medium">
 <div class="container">
   <h2 class="is-size-2 has-text-centered mb-5 pb-5 has-text-weight-bold has-text-uppercase">Menu</h2>
 
@@ -132,6 +126,7 @@
   {{ end }}
 
   <h3 class="is-size-3 mt-5">Bacos</h3>
+  <p class="is-size-4 has-text-black">Steam buns - 2 per order</p>
   <div class="divider"></div>
   {{ range $.Site.Data.bacos }}
   {{ partial "menu.html" . }}
@@ -149,34 +144,36 @@
   {{ partial "menu.html" . }}
   {{ end }}
 
+  <p class="is-size-4 has-text-weight-bold has-text-dark">Additions</p>
+<p>avocado $2 / prawns $6 / smoked chicken $6 / smoked pork $5 / albacore tuna $7</p>
 </div>
 </section>
 
 <section id="section4">
   <div class="gallery" id="photo">
     <figure class="gallery__item gallery__item--1">
-      <img src="https://via.placeholder.com/300" class="gallery__img lazyload" alt="Image 1">
+      <img src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-auto/C047589F-599B-49EF-84DE-E0F6F20EC587_GZa4-qVGz.JPG" sizes="50vw" class="gallery__img lazyload" alt="Image 1">
     </figure>
     <figure class="gallery__item gallery__item--2">
-      <img src="https://via.placeholder.com/300" class="gallery__img lazyload" alt="Image 2">
+      <img src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-auto/WestCoastSaltyBuns__food--8_0gvC_zSHFV.jpg" sizes="50vw" class="gallery__img lazyload" alt="Image 1">
     </figure>
     <figure class="gallery__item gallery__item--3">
-      <img src="https://via.placeholder.com/300" class="gallery__img lazyload" alt="Image 3">
+      <img src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-auto/WestCoastSaltyBuns__food--1_FuX-spLpSK.jpg" sizes="50vw" class="gallery__img lazyload" alt="Image 1">
     </figure>
     <figure class="gallery__item gallery__item--4">
-      <img src="https://via.placeholder.com/300" class="gallery__img lazyload" alt="Image 4">
+      <img src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-auto/WestCoastSaltyBuns__food--5_pLkKjSib0R.jpg" sizes="50vw" class="gallery__img lazyload" alt="Image 1">
     </figure>
     <figure class="gallery__item gallery__item--5">
-      <img src="https://via.placeholder.com/300" class="gallery__img lazyload" alt="Image 5">
+      <img src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-auto/254C985A-9F7B-4BFB-9752-6EFD9447FDA3_HPQJ36G7l.JPG" sizes="50vw" class="gallery__img lazyload" alt="Image 1">
     </figure>
     <figure class="gallery__item gallery__item--6">
-      <img src="https://via.placeholder.com/300" class="gallery__img lazyload" alt="Image 6">
+      <img src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-auto/WestCoastSaltyBuns__food--6_CYuJWHosh.jpg" sizes="50vw" class="gallery__img lazyload" alt="Image 1">
     </figure>
     <figure class="gallery__item gallery__item--7">
-      <img src="https://via.placeholder.com/300" class="gallery__img lazyload" alt="Image 7">
+      <img src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-auto/WestCoastSaltyBuns__food--7_1zBORLboE.jpg" sizes="50vw" class="gallery__img lazyload" alt="Image 1">
     </figure>
     <figure class="gallery__item gallery__item--8">
-      <img src="https://via.placeholder.com/300" class="gallery__img lazyload" alt="Image 8">
+      <img src="{{ $.Site.Params.imagekit_base_url }}tr:ar-1-1,w-auto/WestCoastSaltyBuns__food--2_KtoTDO36fP.jpg" sizes="50vw" class="gallery__img lazyload" alt="Image 1">
     </figure>
   </div>
 </section>
