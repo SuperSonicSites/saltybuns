@@ -1,4 +1,4 @@
-<section class="section has-text-centered-touch footer_bg">
+<footer class="section has-text-centered-touch footer_bg">
 
     <div class="container">
 
@@ -46,52 +46,6 @@
     <div class="column is-3">
       <h3 class="is-size-4 has-text-uppercase mb-2">Contact</h3>
 
-      <div class="">
-      {{ if .Site.Params.social.facebook }}
-      <a href="{{ .Site.Params.social.facebook }}" target="_blank" rel="nofollow noreferrer">
-        <svg class="fill-brand-footer">
-          <use xlink:href="{{ $.Site.BaseURL }}icons/brands.svg#facebook"></use>
-        </svg>
-        </a>
-        {{ else }}
-        <span></span>
-        {{ end }}
-        {{ if .Site.Params.social.twitter }}
-        <a href="{{ .Site.Params.social.twitter }}" target="_blank" rel="nofollow noreferrer">
-          <svg class="fill-brand-footer">
-            <use xlink:href="{{ $.Site.BaseURL }}icons/brands.svg#twitter"></use>
-          </svg>
-          </a>
-          {{ else }}
-        <span></span>
-        {{ end }}
-        {{ if .Site.Params.social.instagram }}
-        <a href="{{ .Site.Params.social.instagram }}" target="_blank" rel="nofollow noreferrer">
-        <svg class="fill-brand-footer">
-          <use xlink:href="{{ $.Site.BaseURL }}icons/brands.svg#instagram"></use>
-        </svg>
-        </a>
-        {{ else }}
-        <span></span>
-        {{ end }}
-        {{ if .Site.Params.social.pinterest}}
-        <a href="{{ .Site.Params.social.pinterest }}" target="_blank" rel="nofollow noreferrer">
-        <svg class="fill-brand-footer">
-          <use xlink:href="{{ $.Site.BaseURL }}icons/brands.svg#pinterest"></use>
-        </svg></a>
-        {{ else }}
-        <span></span>
-        {{ end }}
-        {{ if .Site.Params.social.linkedin}}
-        <a href="{{ .Site.Params.social.linkedin }}" target="_blank" rel="nofollow noreferrer">
-        <svg class="fill-brand-footer">
-          <use xlink:href="{{ $.Site.BaseURL }}icons/brands.svg#linkedin"></use>
-        </svg></a>
-        {{ else }}
-        <span></span>
-        {{ end }}
-      </div>
-
       <address class="">
 
         <small>{{ .Site.Params.schema.address }},</small>
@@ -108,13 +62,59 @@
         <br>
         <small>{{ .Site.Params.schema.country }}</small>
 
-      </address>    
+      </address>
+      
+      <div class="">
+        {{ if .Site.Params.social.facebook }}
+        <a href="{{ .Site.Params.social.facebook }}" target="_blank" rel="nofollow noreferrer">
+          <svg class="fill-brand-footer">
+            <use xlink:href="{{ $.Site.BaseURL }}icons/brands.svg#facebook"></use>
+          </svg>
+          </a>
+          {{ else }}
+          <span></span>
+          {{ end }}
+          {{ if .Site.Params.social.twitter }}
+          <a href="{{ .Site.Params.social.twitter }}" target="_blank" rel="nofollow noreferrer">
+            <svg class="fill-brand-footer">
+              <use xlink:href="{{ $.Site.BaseURL }}icons/brands.svg#twitter"></use>
+            </svg>
+            </a>
+            {{ else }}
+          <span></span>
+          {{ end }}
+          {{ if .Site.Params.social.instagram }}
+          <a href="{{ .Site.Params.social.instagram }}" target="_blank" rel="nofollow noreferrer">
+          <svg class="fill-brand-footer">
+            <use xlink:href="{{ $.Site.BaseURL }}icons/brands.svg#instagram"></use>
+          </svg>
+          </a>
+          {{ else }}
+          <span></span>
+          {{ end }}
+          {{ if .Site.Params.social.pinterest}}
+          <a href="{{ .Site.Params.social.pinterest }}" target="_blank" rel="nofollow noreferrer">
+          <svg class="fill-brand-footer">
+            <use xlink:href="{{ $.Site.BaseURL }}icons/brands.svg#pinterest"></use>
+          </svg></a>
+          {{ else }}
+          <span></span>
+          {{ end }}
+          {{ if .Site.Params.social.linkedin}}
+          <a href="{{ .Site.Params.social.linkedin }}" target="_blank" rel="nofollow noreferrer">
+          <svg class="fill-brand-footer">
+            <use xlink:href="{{ $.Site.BaseURL }}icons/brands.svg#linkedin"></use>
+          </svg></a>
+          {{ else }}
+          <span></span>
+          {{ end }}
+        </div>
 
     </div>
 
   </div>
 </div>
-</section>
+</footer>
 <div class="has-background-light py-5">
 
     <div class="container level has-text-dark">

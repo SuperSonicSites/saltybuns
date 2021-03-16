@@ -1,7 +1,7 @@
 baseURL: "/"
 DefaultContentLanguage: en
-title: Brightest Days Spray Foam Co.
-description: Spray Foam Insulation Services in Tofino, Ucluelet & Port Alberni. Because Energy Efficient Homes Are More Valuable. Get a FREE Consultation Today.
+title: West Coast Salty Buns
+description: Ukee's Coolest Winnebago Food Truck. Serving Up Fresh Top Quality Bites, Burritos, Bacos & Bowls.
 
 menu:
       main:
@@ -9,40 +9,40 @@ menu:
           url: '/'
           weight: 1
         - name: About
-          url: '#about'
+          url: '#section3'
           weight: 2
         - name: Menu
           url: '#menu'
           weight: 3
         - name: Photos
-          url: '#Photos'
+          url: '#section4'
           weight: 4
         - name: Reviews
-          url: '#Photos'
+          url: '#section6'
           weight: 5
         - name: Contact
           url: '#contact'
           weight: 6
 
 params:
-    name: 'Brightest Days Spray Foam Co.'
+    name: 'West Coast Salty Buns'
     showLanguageSelector: false #true if bilingual site - false if unilingua
     usebasin: '' #endpoint for forms
     googlemap: '' # Map code of Google
     gtm: ''
     imagekit_base_url: "https://ik.imagekit.io/supersonicsites/Westcoast_Salty_Buns/"
     hours:
-        hour1en: 'Mon to Fri - 9:00-17:00' #Footer Hours Line #1
-        hour2en: 'Sat - On Demand' #Footer Hours Line #2
-        hour3en: 'Sun - On Demand' #Footer Hours Line #3
+        hour1en: 'Tue to Sat - 12:00-7:00' #Footer Hours Line #1
+        hour2en: 'Sun - Closed' #Footer Hours Line #2
+        hour3en: 'Mon - Closed' #Footer Hours Line #3
     social:
         facebook: ''
         twitter: ''
         pinterest: ''
-        instagram: ''
+        instagram: 'https://www.instagram.com/westcoastsalty_buns_'
         linkedin: ''
     schema:
-        type: ProfessionalService
+        type: Restaurant
         priceRange: $$$
         reservation: 'false'
         openinghour: 'Mo-Fr 9:00-17:00'
@@ -50,14 +50,14 @@ params:
         logofooter: "img/logo.png"
         logo: "logo-vertical_Q9u2mUs5X.jpg"
         og: "img/og.jpg"
-        address: 1356 Pine Rd.
+        address: 250-726-6150
         address2: ''
         city: Ucluelet
         region: BC
         country: Canada
         postalcode: V0R 3A0
-        phone: +1-250-720-7610 
-        email: info@brightestdays.ca
+        phone: +1-250-726-6150
+        email: westcoastsaltybuns@gmail.com
 
 enableRobotsTXT: true
 disableAliases: true

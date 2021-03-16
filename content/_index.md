@@ -30,6 +30,14 @@ testimonial2: We ordered the flo and pollo burritos. We were amazed. They were H
 testimonial3__name: Ash Tastic
 testimonial3: If your looking for a filling absolutely mouthwatering meal that won’t break the bank this place is a MUST!!! Every time I’ve ordered from here everything was perfectly balanced in flavour. If you haven’t already.....EAT HERE!!
 
+testimonial4__name: Julie K
+testimonial4: I had the Side Stripe Bacos (steamed buns) are AMAZING! Light fluffy bun packed full of flavour with fresh ingredients that hit your taste buds and won’t disappoint! Also had the West Coast Sunday and added the smoked chicken which was tender and flavourful meat that complemented this dish perfectly to round out the meal. Make sure to go hungry as it’s well worth the trip.
+
+testimonial5__name: Francoise J
+testimonial5: I was impressed with the upbeat and West Coast appeal of the truck, so I had to stop and try the food. It’s a lovely menu with Mexican influence. I ordered the West Coast Sunday Bites with the smoked chicken and it’s definitely enough for a meal. It was love at first bite. I also ordered the Side Stripe Bacos, and they did not disappoint. The Chef sources the seafood locally and smokes the fish/meat himself.
+testimonial6__name: Lucas
+testimonial6: Great food, one of the best burritos I have ever had. The Chadzilla is my pick. The bacos and vegan popcorn chicken are also a solid choice. You will not leave hungry I guarantee it. All the fresh ingredients and use of local food is a great touch. They serve locally roasted coffee it’s wonderful.
+
 contact_heading: "Connect With Us"
-contact_desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+contact_desc: Looking for tasty mexican flavored catering? Drop us a line and we will be happy to see what we can do for you!
 ---

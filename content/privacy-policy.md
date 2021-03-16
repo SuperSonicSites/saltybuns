@@ -3,8 +3,8 @@ title: Privacy Policy
 description: "The privacy policy of Brightest Days"
 layout: single
 bannerh1: "Privacy Policy"
-companyname: "Brightest Days Spray Foam Co." #Company Name Here
-companyemail: "info@brightestdays.ca" #Company Name Here
+companyname: "West Coast Salty Buns" #Company Name Here
+companyemail: "westcoastsaltybuns@gmail.com" #Company Name Here
 ---
 
 Effective Date: May 5, 2020

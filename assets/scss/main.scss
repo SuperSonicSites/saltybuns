@@ -257,3 +257,17 @@ ul {
     grid-gap: 0px;
   }
 }
+/*----------*/
+/*--FOOTER--*/
+/*----------*/
+footer ul {
+list-style: none;
+padding-left: 0px;
+line-height: 1.8;
+}
+.fill-brand-footer {
+  width: 30px;
+  height: 30px;
+  fill: $primary;
+  margin-top: 1rem;
+}
