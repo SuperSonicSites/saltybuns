@@ -3,28 +3,29 @@
 
   <div class="hero-body">
 
-    <div class="container py-5 my-5">
+    <div class="container">
   
           <div class="is-flex is-column is-justified-center is-aligned-center py-5">
             
-            <div class="my-5">
-            <h1 class="title has-text-centered has-text-uppercase">Awesome West Coast Mexican BBQ</h1>
+ 
+              <img src="{{ $.Site.Params.imagekit_base_url }}tr:w-550/{{ $.Site.Params.schema.logo }}" sizes="100vw"  alt="{{ .Site.Params.name }} logo">
+     
             <p class="subtitle has-text-centered my-2 has-text-capitalized">
               {{ .Params.hero1 | safeHTML }} {{ .Params.hero2 | safeHTML }}
             </p>
-          </div>
+
           <div class="">
 
             <img
             src="{{ $.Site.Params.imagekit_base_url }}tr:w-500,/{{ .Params.hero_img }}"
             sizes="100vw"
             data-srcset="
-            {{ $.Site.Params.imagekit_base_url }}tr:w-350,/{{ .Params.hero_img }} 400w,
-            {{ $.Site.Params.imagekit_base_url }}tr:w-500,/{{ .Params.hero_img }} 768w,
-            {{ $.Site.Params.imagekit_base_url }}tr:w-800,/{{ .Params.hero_img }} 800w"
+            {{ $.Site.Params.imagekit_base_url }}tr:w-450,/{{ .Params.hero_img }} 400w,
+            {{ $.Site.Params.imagekit_base_url }}tr:w-600,/{{ .Params.hero_img }} 768w,
+            {{ $.Site.Params.imagekit_base_url }}tr:w-900,/{{ .Params.hero_img }} 800w"
             data-src="{{ $.Site.Params.imagekit_base_url }}tr:w-350,/{{ .Params.hero_img }} 768w"
             class="lazyload"
-            width="800px";
+            width="900px";
             alt="{{ .Site.Params.name }}"
             />
           </div>
@@ -84,58 +85,48 @@
 
 
 
-<section id="section6" class="section is-medium has-text-white testimonials has-background-primary">
+<section id="section6" class="has-text-white testimonials section6 " style="background-image:url(img/background.jpg);">
+  <div class="overlay">
   <div class="container">
     <h2 class="has-text-centered is-size-2 has-text-uppercase has-text-white has-text-weight-bold">Testimonials</h2>
 
-    <div class="columns is-5 mt-5">
+    <div class="columns is-5 is-5 mt-5">
       <div class="column">
         <div class="testimonial testimonial_1">
-          <h2 class="testimonial__name is-size-4 has-text-weight-bold">{{ .Params.testimonial1__name }}</h2>
+          <h2 class="testimonial__name is-size-4 has-text-weight-bold pb-4">{{ .Params.testimonial1__name }}</h2>
             {{- partial "stars.html" .}}
           <p class="block testimonial__text">{{ .Params.testimonial1 }}</p>
         </div>
       </div>
       <div class="column">
         <div class="testimonial testimonial_2">
-          <h2 class="testimonial__name is-size-4 has-text-weight-bold">{{ .Params.testimonial2__name }}</h2>
+          <h2 class="testimonial__name is-size-4 has-text-weight-bold pb-4">{{ .Params.testimonial2__name }}</h2>
           {{- partial "stars.html" .}}
         <p class="block testimonial__text">{{ .Params.testimonial2 }}</p>
         </div>
       </div>
-      <div class="column">
-        <div class="testimonial testimonial_3">
-          <h2 class="testimonial__name is-size-4 has-text-weight-bold">{{ .Params.testimonial3__name }}</h2>
-          {{- partial "stars.html" .}}
-        <p class="block testimonial__text">{{ .Params.testimonial3 }}</p>
-        </div>
-      </div>
+
     </div>
 
     <div class="columns is-5">
       <div class="column">
         <div class="testimonial testimonial_4">
-          <h2 class="testimonial__name is-size-4 has-text-weight-bold">{{ .Params.testimonial4__name }}</h2>
+          <h2 class="testimonial__name is-size-4 has-text-weight-bold pb-4">{{ .Params.testimonial4__name }}</h2>
             {{- partial "stars.html" .}}
           <p class="block testimonial__text">{{ .Params.testimonial4 }}</p>
         </div>
       </div>
       <div class="column">
         <div class="testimonial testimonial_2">
-          <h2 class="testimonial__name is-size-4 has-text-weight-bold">{{ .Params.testimonial5__name }}</h2>
+          <h2 class="testimonial__name is-size-4 has-text-weight-bold pb-4">{{ .Params.testimonial5__name }}</h2>
           {{- partial "stars.html" .}}
         <p class="block testimonial__text">{{ .Params.testimonial5 }}</p>
         </div>
       </div>
-      <div class="column">
-        <div class="testimonial testimonial_3">
-          <h2 class="testimonial__name is-size-4 has-text-weight-bold">{{ .Params.testimonial6__name }}</h2>
-          {{- partial "stars.html" .}}
-        <p class="block testimonial__text">{{ .Params.testimonial6 }}</p>
-        </div>
+
       </div>
     </div>
-
+  </div>
   </div>
 </section>
 
@@ -289,13 +280,13 @@
       class="is-size-2 has-text-weight-bold has-text-uppercase has-text-centered">
       {{ .Params.contact_heading }}
     </h2>
-    <h3 class="has-text-centered py-2 is-size-4">
+    <p class="has-text-centered py-2 is-size-4">
       {{ .Params.contact_desc | safeHTML }}
-    </h3>
+    </p>
   </div>
-  <div class="column is-half is-offset-one-quarter shadow box_form mt-5">
+  <div class="column is-half is-offset-one-quarter shadow box_form mt-5 ">
     <form id="contact-form" method="POST" action="{{ .Site.Params.usebasin }}"
-      class="has-shadow form has-background-light p-5" role="form">
+      class="has-shadow form has-background-white p-5" role="form">
       <div class="field">
         <label for="form_name" class="label">{{ i18n "firstname" }} *</label>
 
