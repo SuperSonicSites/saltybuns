@@ -39,5 +39,5 @@ testimonial6__name: Lucas
 testimonial6: Great food, one of the best burritos I have ever had. The Chadzilla is my pick. The bacos and vegan popcorn chicken are also a solid choice. You will not leave hungry I guarantee it. All the fresh ingredients and use of local food is a great touch. They serve locally roasted coffee it’s wonderful.
 
 contact_heading: "Connect With Us"
-contact_desc: Looking for tasty mexican flavored catering? Drop us a line and we will be happy to see what we can do for you!
+contact_desc: Looking for tasty mexican flavored catering?<br>Drop us a line and we will be happy to see what we can do for you!
 ---

@@ -3,12 +3,12 @@
     <div class="container is-flex is-row is-justified-center is-aligned-center">
 
   
-    <div id="navbarBasicExample" class="navbar-menu">
+    <div id="navbarBasicExample" class="">
   
-      <div class="navbar-end">
+      <div class="navbar is-flex is-justified-center is-aligned-center">
         {{ range .Site.Menus.main -}}
             
-        <a class="navbar-item" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+        <a class="navbar-item py-5" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
         
         {{ end }}
         {{ if .Site.Params.showLanguageSelector }}

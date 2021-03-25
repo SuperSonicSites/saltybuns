@@ -5,9 +5,6 @@ description: Ukee's Coolest Winnebago Food Truck. Serving Up Fresh Top Quality B
 
 menu:
       main:
-        - name: Home
-          url: '/'
-          weight: 1
         - name: About
           url: '#section3'
           weight: 2
