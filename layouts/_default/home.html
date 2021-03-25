@@ -8,31 +8,32 @@
           <div class="is-flex is-column is-justified-center is-aligned-center py-5">
             
  
-              <img src="{{ $.Site.Params.imagekit_base_url }}tr:w-550/{{ $.Site.Params.schema.logo }}" sizes="100vw"  alt="{{ .Site.Params.name }} logo">
+              <img src="{{ $.Site.Params.imagekit_base_url }}tr:w-550/{{ $.Site.Params.schema.logo }}" sizes="100vw"  alt="{{ .Site.Params.name }} logo" data-aos="fade-up" data-aos-duration="800">
      
-            <p class="subtitle has-text-centered my-2 has-text-capitalized">
+            <p class="subtitle has-text-centered my-2 has-text-capitalized" data-aos="fade" data-aos-duration="800" data-aos-delay="500">
               {{ .Params.hero1 | safeHTML }} {{ .Params.hero2 | safeHTML }}
             </p>
 
           <div class="">
 
             <img
-            src="{{ $.Site.Params.imagekit_base_url }}tr:w-500,/{{ .Params.hero_img }}"
+            src="{{ $.Site.Params.imagekit_base_url }}tr:w-700,/{{ .Params.hero_img }}"
             sizes="100vw"
             data-srcset="
-            {{ $.Site.Params.imagekit_base_url }}tr:w-450,/{{ .Params.hero_img }} 400w,
-            {{ $.Site.Params.imagekit_base_url }}tr:w-600,/{{ .Params.hero_img }} 768w,
-            {{ $.Site.Params.imagekit_base_url }}tr:w-900,/{{ .Params.hero_img }} 800w"
-            data-src="{{ $.Site.Params.imagekit_base_url }}tr:w-350,/{{ .Params.hero_img }} 768w"
+            {{ $.Site.Params.imagekit_base_url }}tr:w-700,/{{ .Params.hero_img }} 400w,
+            {{ $.Site.Params.imagekit_base_url }}tr:w-700,/{{ .Params.hero_img }} 768w,
+            {{ $.Site.Params.imagekit_base_url }}tr:w-700,/{{ .Params.hero_img }} 800w"
+            data-src="{{ $.Site.Params.imagekit_base_url }}tr:w-700,/{{ .Params.hero_img }} 768w"
             class="lazyload"
-            width="900px";
+            style="max-width:700px;"
+            data-aos="fade" data-aos-duration="800" data-aos-delay="1000"
             alt="{{ .Site.Params.name }}"
             />
           </div>
-          <div class="hero__cta--mobile">
+          <div class="hero__cta--mobile" data-aos="fade-up" data-aos-duration="800">
             <a href="tel:{{ .Site.Params.schema.phone }}" class="button is-primary is-large">Call Now To Order</a>
           </div>
-          <div class="hero__cta--desktop">
+          <div class="hero__cta--desktop" data-aos="fade-up" data-aos-duration="800">
             <a href="#menu" class="button is-primary is-large">Explore Our Menu</a>
           </div>
           </div>
@@ -71,6 +72,7 @@
         data-src="{{ $.Site.Params.imagekit_base_url }}tr:ar-3-4,w-350,/WestCoastSaltyBuns__food--3_aKeKXqxg18.jpg 768w"
         class="lazyload has-shadow"
         width="100%";
+        data-aos="fade" data-aos-duration="800"
         alt="{{ .Site.Params.name }}"
         />
         </div>
@@ -91,14 +93,14 @@
     <h2 class="has-text-centered is-size-2 has-text-uppercase has-text-white has-text-weight-bold">Testimonials</h2>
 
     <div class="columns is-5 is-5 mt-5">
-      <div class="column">
+      <div class="column" data-aos="fade-up" data-aos-duration="800">
         <div class="testimonial testimonial_1">
           <h2 class="testimonial__name is-size-4 has-text-weight-bold pb-4">{{ .Params.testimonial1__name }}</h2>
             {{- partial "stars.html" .}}
           <p class="block testimonial__text">{{ .Params.testimonial1 }}</p>
         </div>
       </div>
-      <div class="column">
+      <div class="column" data-aos="fade-up" data-aos-duration="800">
         <div class="testimonial testimonial_2">
           <h2 class="testimonial__name is-size-4 has-text-weight-bold pb-4">{{ .Params.testimonial2__name }}</h2>
           {{- partial "stars.html" .}}
@@ -109,14 +111,14 @@
     </div>
 
     <div class="columns is-5">
-      <div class="column">
+      <div class="column" data-aos="fade-up" data-aos-duration="800">
         <div class="testimonial testimonial_4">
           <h2 class="testimonial__name is-size-4 has-text-weight-bold pb-4">{{ .Params.testimonial4__name }}</h2>
             {{- partial "stars.html" .}}
           <p class="block testimonial__text">{{ .Params.testimonial4 }}</p>
         </div>
       </div>
-      <div class="column">
+      <div class="column" data-aos="fade-up" data-aos-duration="800">
         <div class="testimonial testimonial_2">
           <h2 class="testimonial__name is-size-4 has-text-weight-bold pb-4">{{ .Params.testimonial5__name }}</h2>
           {{- partial "stars.html" .}}
