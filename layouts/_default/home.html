@@ -16,15 +16,15 @@
           <div class="">
 
             <img
-            src="{{ $.Site.Params.imagekit_base_url }}tr:w-700,/{{ .Params.hero_img }}"
+            src="{{ $.Site.Params.imagekit_base_url }}tr:w-800,/{{ .Params.hero_img }}"
             sizes="100vw"
             data-srcset="
-            {{ $.Site.Params.imagekit_base_url }}tr:w-700,/{{ .Params.hero_img }} 400w,
-            {{ $.Site.Params.imagekit_base_url }}tr:w-700,/{{ .Params.hero_img }} 768w,
-            {{ $.Site.Params.imagekit_base_url }}tr:w-700,/{{ .Params.hero_img }} 800w"
-            data-src="{{ $.Site.Params.imagekit_base_url }}tr:w-700,/{{ .Params.hero_img }} 768w"
+            {{ $.Site.Params.imagekit_base_url }}tr:w-800,/{{ .Params.hero_img }} 400w,
+            {{ $.Site.Params.imagekit_base_url }}tr:w-800,/{{ .Params.hero_img }} 768w,
+            {{ $.Site.Params.imagekit_base_url }}tr:w-800,/{{ .Params.hero_img }} 800w"
+            data-src="{{ $.Site.Params.imagekit_base_url }}tr:w-800,/{{ .Params.hero_img }} 768w"
             class="lazyload"
-            style="max-width:700px;"
+            width="800px"
             data-aos="fade" data-aos-duration="800" data-aos-delay="1000"
             alt="{{ .Site.Params.name }}"
             />
@@ -32,7 +32,7 @@
           <div class="hero__cta--mobile" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1500">
             <a href="tel:{{ .Site.Params.schema.phone }}" class="button is-primary is-large">Call Now To Order</a>
           </div>
-          <div class="hero__cta--desktop" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1500">
+          <div class="hero__cta--desktop" data-aos="fade-up" data-aos-duration="800">
             <a href="#menu" class="button is-primary is-large">Explore Our Menu</a>
           </div>
           </div>
