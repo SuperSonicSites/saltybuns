@@ -1,4 +1,4 @@
-baseURL: "/"
+baseURL: "https://www.westcoastsaltybuns.com"
 DefaultContentLanguage: en
 title: West Coast Salty Buns
 description: Ukee's Coolest Winnebago Food Truck. Serving Up Fresh Top Quality Bites, Burritos, Bacos & Bowls.
@@ -46,7 +46,7 @@ params:
         logo: "img/logo.png"
         logofooter: "img/logo.png"
         logo: "logo-vertical_Q9u2mUs5X.jpg"
-        og: "img/og.jpg"
+        og: "https://ik.imagekit.io/supersonicsites/Westcoast_Salty_Buns/tr:ar-16-9,w-1600,/saltybuns-19_jXuCrehKD.JPG"
         address: 1708 Peninsula Road
         address2: ''
         city: Ucluelet
