@@ -24,9 +24,9 @@ menu:
 params:
     name: 'West Coast Salty Buns'
     showLanguageSelector: false #true if bilingual site - false if unilingua
-    usebasin: '' #endpoint for forms
+    usebasin: 'https://usebasin.com/f/1daf74fdc826' #endpoint for forms
     googlemap: '' # Map code of Google
-    gtm: ''
+    gtm: 'GTM-PVL3WCQ'
     imagekit_base_url: "https://ik.imagekit.io/supersonicsites/Westcoast_Salty_Buns/"
     hours:
         hour1en: 'Tue to Sat - 12:00-7:00' #Footer Hours Line #1
@@ -47,7 +47,7 @@ params:
         logofooter: "img/logo.png"
         logo: "logo-vertical_Q9u2mUs5X.jpg"
         og: "img/og.jpg"
-        address: 250-726-6150
+        address: 1708 Peninsula Road
         address2: ''
         city: Ucluelet
         region: BC

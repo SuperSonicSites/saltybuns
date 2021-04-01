@@ -1,6 +1,6 @@
 ---
-title: Lorem Ipsum
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor, risus in varius eleifend, lectus quam vehicula lorem, at pharetra metus lorem vel felis.  
+title: Ucluelet's Mexican BBQ Food Truck
+description: West Coast Salty Buns is a BBQ Mexican food truck that came to be through a passion for smoked meat cooked low and slow, hearty and fresh flavours and a 1976 Winnebago named Wild Wanda.  
 
 hero1: 
 hero2: "Serving BBQ Mexican inspired cuisine. Burritos, bacos, bowls and bites." 
