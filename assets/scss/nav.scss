@@ -43,7 +43,8 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 /* MOBILE MENU STYLES */
 .mobile {
   min-height: 5rem;
-  background-color: white;
+  background-color: transparent;
+
 }
   .menu-wrap {
     position: fixed;
