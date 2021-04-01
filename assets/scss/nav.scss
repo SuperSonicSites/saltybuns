@@ -44,7 +44,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .mobile {
   min-height: 5rem;
   background-color: transparent;
-
+  display: none;
 }
   .menu-wrap {
     position: fixed;
