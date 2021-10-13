@@ -29,9 +29,9 @@ params:
     gtm: 'GTM-PVL3WCQ'
     imagekit_base_url: "https://ik.imagekit.io/supersonicsites/Westcoast_Salty_Buns/"
     hours:
-        hour1en: 'Wed to Sun - 12:00-8:00' #Footer Hours Line #1
-        hour2en: 'Mon - Closed' #Footer Hours Line #2
-        hour3en: 'Tue - Closed' #Footer Hours Line #2
+        hour1en: 'Tue to Sat - 12:00-7:00' #Footer Hours Line #1
+        hour2en: 'Sun - Closed' #Footer Hours Line #2
+        hour3en: 'Mon - Closed' #Footer Hours Line #2
     social:
         facebook: ''
         twitter: ''
@@ -42,7 +42,7 @@ params:
         type: Restaurant
         priceRange: $$$
         reservation: 'false'
-        openinghour: 'We-Su 12:00-20:00'
+        openinghour: 'Tu-Sa 12:00-19:00'
         logo: "img/logo.png"
         logofooter: "img/logo.png"
         logo: "logo-vertical_Q9u2mUs5X.jpg"
