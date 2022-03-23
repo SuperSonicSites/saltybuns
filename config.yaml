@@ -42,7 +42,7 @@ params:
         type: Restaurant
         priceRange: $$$
         reservation: 'false'
-        openinghour: 'Tu-Sa 12:00-19:00'
+        openinghour: 'Su-Sa 12:00-19:00'
         logo: "img/logo.png"
         logofooter: "img/logo.png"
         logo: "logo-vertical_Q9u2mUs5X.jpg"
