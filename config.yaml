@@ -29,9 +29,9 @@ params:
     gtm: 'GTM-PVL3WCQ'
     imagekit_base_url: "https://ik.imagekit.io/supersonicsites/Westcoast_Salty_Buns/"
     hours:
-        hour1en: 'Tue to Sat - 12:00-7:00' #Footer Hours Line #1
-        hour2en: 'Sun - Closed' #Footer Hours Line #2
-        hour3en: 'Mon - Closed' #Footer Hours Line #3
+        hour1en: 'Mon to Fri - 12:00-7:00' #Footer Hours Line #1
+        hour2en: 'Sat - 12:00-7:00' #Footer Hours Line #2
+        hour3en: 'Sun - 12:00-7:00' #Footer Hours Line #3
     social:
         facebook: ''
         twitter: ''
